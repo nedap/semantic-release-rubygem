@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gusto/semantic-release-rubygem.git"
+    "url": "https://github.com/nedap/semantic-release-rubygem.git"
   },
-  "homepage": "https://github.com/Gusto/semantic-release-rubygem#readme",
+  "homepage": "https://github.com/nedap/semantic-release-rubygem#readme",
   "keywords": [
     "rubygems",
     "publish",
