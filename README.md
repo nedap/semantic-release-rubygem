@@ -23,7 +23,7 @@ Add the plugin to the [**semantic-release** configuration file](https://github.c
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "semantic-release-rubygem",
+    "@nedap/semantic-release-rubygem",
   ]
 }
 ```
@@ -65,3 +65,21 @@ end
 | `pkgRoot`    | Directory path to publish.	 | `.` | 
 
 Note: The `pkgRoot` directory must contain a *.gemspec file.
+
+Example `.releaserc.json`:
+
+```json
+{
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    ["@nedap/semantic-release-rubygem", {
+      "gemHost": "https//rubygems.org",
+      "updateGemfileLock": false,
+      "gemPublish": true,
+      "gemFileDir": false,
+      "pkgRoot": "."
+    }]
+  ]
+}
+```
