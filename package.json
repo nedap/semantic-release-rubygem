@@ -1,5 +1,5 @@
 {
-  "name": "semantic-release-rubygem",
+  "name": "@nedap/semantic-release-rubygem",
   "version": "0.0.0-development",
   "description": "A semantic-release plugin for publishing Ruby gems",
   "main": "index.js",
