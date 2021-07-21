@@ -104,7 +104,7 @@ it('creates the credentials file', async () => {
     { credentialsFile },
   );
   const credentialsContents = await readFile(credentialsFile, 'utf8');
-  expect(credentialsContents).toEqual('---\n:rubygems_api_key: 123');
+  expect(credentialsContents).toEqual('---\n:api_key: 123');
 });
 
 describe('when the API key env var is not defined', () => {
